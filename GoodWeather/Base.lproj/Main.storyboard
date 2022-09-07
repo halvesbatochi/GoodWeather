@@ -11,7 +11,7 @@
         <!--GoodWeather-->
         <scene sceneID="Ex1-QN-biN">
             <objects>
-                <tableViewController id="XpD-Cn-zUx" sceneMemberID="viewController">
+                <tableViewController id="XpD-Cn-zUx" customClass="WeatherListTableViewController" customModule="GoodWeather" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Rjg-1P-rWA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -42,12 +42,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cJD-ho-NNf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="940.57971014492762" y="113.83928571428571"/>
+            <point key="canvasLocation" x="419" y="114"/>
         </scene>
         <!--Add City-->
         <scene sceneID="Kd3-20-pot">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="yBX-Rm-wfp" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="yBX-Rm-wfp" customClass="AddWeatherCityViewController" customModule="GoodWeather" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dv9-Cz-955">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
