@@ -75,14 +75,40 @@
                     <view key="view" contentMode="scaleToFill" id="dv9-Cz-955">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kO7-6k-E3t">
+                                <rect key="frame" x="20" y="120" width="374" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78n-O3-tUU">
+                                <rect key="frame" x="180" y="174" width="56" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Save"/>
+                                <connections>
+                                    <action selector="saveCityButtonPressed" destination="yBX-Rm-wfp" eventType="touchUpInside" id="r8F-C0-nLm"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="3hT-S2-LYI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Add City" id="tte-Ai-nuv"/>
+                    <navigationItem key="navigationItem" title="Add City" id="tte-Ai-nuv">
+                        <barButtonItem key="leftBarButtonItem" title="Close" id="tbe-Fd-yx5">
+                            <connections>
+                                <action selector="close" destination="yBX-Rm-wfp" id="ILQ-wQ-obZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cityNameTextField" destination="kO7-6k-E3t" id="Ajt-kq-lPg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iNr-fx-CFJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2058" y="114"/>
+            <point key="canvasLocation" x="2057.971014492754" y="113.83928571428571"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="35f-dJ-vad">
