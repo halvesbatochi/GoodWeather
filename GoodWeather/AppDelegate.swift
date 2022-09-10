@@ -28,11 +28,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             UINavigationBar.appearance().compactAppearance = appearance
         
         UIBarButtonItem.appearance().tintColor = .white
-        
-        
-
-        
         return true
+    }
+    
+    private func setupDefaultSettings() {
+        
+        let userDefaults = UserDefaults.standard
+        if userDefaults.value(forKey: "unit") == nil {
+            userDefaults.set(Unit.fahrenheit.rawValue, forKey: "unit")
+        }
     }
 
     // MARK: UISceneSession Lifecycle
